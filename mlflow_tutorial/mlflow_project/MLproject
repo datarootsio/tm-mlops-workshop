@@ -1,0 +1,16 @@
+name: tutorial
+
+# python_env: python_env.yaml
+# or
+# conda_env: my_env.yaml
+# or
+# docker_env:
+#    image:  mlflow-docker-example
+
+entry_points:
+  main:
+    parameters:
+      csv_file: {type: string, default: dataset.csv}
+      max_depth: {type: int, default: 6}
+      max_features: {type: int, default: 3}
+    command: "python train.py {csv_file} {max_depth} {max_features}"

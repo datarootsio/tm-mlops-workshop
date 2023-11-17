@@ -15,8 +15,17 @@ MLflow is an open source platform for managing the end-to-end machine learning l
 
 Install the requirements and then move on to the notebooks.
 
-python -m venv mlflow-env  
-source mlflow-env/bin/activate 
+if you work with virtual environments:
+```
+python3.11 -m venv mlflow-env  
+source mlflow-env/bin/activate
+```
+
+and then:
+```
 pip install -r requirements.txt
+jupyter notebook
+```
 
 ## Have fun!
+
